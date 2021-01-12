@@ -1,0 +1,246 @@
+@font-face{
+font-family: 'mi font';
+src: url(../index/BebasNeue-Regular.ttf);
+
+}
+
+@media (max-width:768px)
+{
+
+       header{
+
+                   width: 100vw;
+                   justify-content: center;
+
+            }
+
+
+            nav{
+                display: none;
+
+             }
+
+             form{
+
+                margin-bottom: 100px;
+
+
+             }
+
+            .box{
+                 margin-top:300px;
+
+
+            }
+
+         }
+
+
+
+
+
+}
+
+
+
+
+
+html{
+   position: relative;
+   width: 100%;
+   height: auto;
+
+
+
+}
+
+
+
+body
+{
+
+ background-image: url("../index/Savin-NY-Website-Background-Web.jpg");
+ background-size: cover;
+ font-family: 'Courier New', Courier, monospace;
+
+
+ }
+
+
+
+
+header
+{
+    display: flex;
+    justify-content: center;
+
+
+}
+header img
+{
+
+height: 200px;
+display: flex; /*Aquí no hace falta poner el flexbox porque se aplicaría a los hijos e img no tiene hijos*/
+justify-content: center;
+}
+
+
+*
+{
+box-sizing: border-box;
+padding: 0px;
+margin: 0px;
+
+}
+
+nav
+{
+
+
+padding-bottom: 40px;
+padding-left: 500px;
+
+
+}
+ul
+ {
+    list-style-type: none;
+
+
+
+
+
+}
+
+li
+{
+
+     display: flex;
+      justify-content: center;
+    float: left;  /*Estas propiedades no. El flexbox porque se aplica a los hijos y li no tiene hijos. Y el float porque no de debe usar para maquetar. Lo mejor sería display:inline-block;*/
+    background-color: #303030;
+    border: #000000 2px solid;
+
+    margin-right: 10px;
+    padding: 0 4px;
+
+
+}
+
+
+
+a{
+
+color: white;
+text-decoration: none;
+
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box
+{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center ;
+    direction: ltr;
+    padding-right: 200px;
+    padding-left: 100px;
+
+}
+
+
+
+
+form
+{
+   display: flex;
+   justify-content: left;
+   padding-top: 20px;
+   padding-left: 20px;
+
+
+
+}
+
+
+div
+{
+
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: r;
+
+}
+
+
+
+.container
+{
+
+    background-color: rgb(107, 107, 107);
+    width: fit-content;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    border-style: inherit;
+    box-shadow: -3px -3px 5px rgb(29, 24, 24);
+    align-items: center;
+    flex-direction: column;
+}
+/*Todos los justify-content aquí no tienen sentido, igual, es para los hijos y estos elementos no tienen hijos*/
+.Nombre
+{
+    justify-content: center;
+    display: flexbox;
+    flex-direction: column;
+}
+.contraseña
+{
+    justify-content: center;
+    display: flexbox;
+    flex-direction: column;
+}
+.telefono
+{
+    justify-content: center;
+    display: flexbox;
+    flex-direction: column;
+}
+.Fecha
+{
+    justify-content: center;
+    display: flexbox;
+    flex-direction: column;
+}
+
+
+
+
+footer
+{
+   display: flex;
+   justify-content: right;
+flex-direction: row-reverse;
+padding-right: 30px;
+
+}
